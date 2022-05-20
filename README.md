@@ -10,7 +10,8 @@ this.state w komponentach klasowych.
 ## Użyte technologie
 
 
-- ```` `HTML5` ````
-- `` `CSS3` ``
-- `` `JS` ``
-- `` `React` ``
+- `` HTML5 ``
+- `` CSS3 ``
+- `` JS ``
+- `` React ``
+
