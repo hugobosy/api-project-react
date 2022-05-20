@@ -1,4 +1,6 @@
+import React, {useEffect} from "react";
 import './App.css';
+import {useState} from "react";
 
 // Zewnętrzna pseudo baza danych
 const data = [
@@ -14,7 +16,7 @@ const data = [
   },
 ]
 
-setInterval(()=>{
+setInterval(()=> {
   const index = data.length + 1;
   data.push({
     id: index,
@@ -24,9 +26,25 @@ setInterval(()=>{
 }, 3000)
 
 function App() {
+
+  const [post, setPost] = useState([...data])
+
+  const getData = () => {
+    setPost([...data])
+  }
+
+  // useEffect(()=> {
+    setInterval(getData, 1000);
+  // }, [])
+
   return (
     <div className="App">
-
+      {post.map(post => (
+          <div key={post.id}>
+            <p>{post.title}</p>
+            <p>{post.body}</p>
+          </div>
+      ))}
     </div>
   );
 }
