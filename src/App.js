@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+
+// Zewnętrzna pseudo baza danych
+const data = [
+  {
+    id: 1,
+    title: "Wiadomość nr 1",
+    body: "Zawartość wiadomości nr 1"
+  },
+  {
+    id: 2,
+    title: "Wiadomość nr 2",
+    body: "Zawartość wiadomości nr 2"
+  },
+]
+
+setInterval(()=>{
+  const index = data.length + 1;
+  data.push({
+    id: index,
+    title: `Wiadomość nr ${index}`,
+    body: `Zawartość wiadomości nr ${index}`,
+  })
+}, 3000)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
