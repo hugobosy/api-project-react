@@ -33,9 +33,9 @@ function App() {
     setPost([...data])
   }
 
-  // useEffect(()=> {
+  useEffect(()=> {
     setInterval(getData, 1000);
-  // }, [])
+  }, [])
 
   return (
     <div className="App">
