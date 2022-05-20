@@ -7,3 +7,10 @@ W tym projekcie ćwiczyłem użycie hook'a [useState](https://pl.reactjs.org/doc
 funkcyjnym, jako odpowiednika
 this.state w komponentach klasowych.
 
+## Użyte technologie
+
+
+- ```` `HTML5` ````
+- `` `CSS3` ``
+- `` `JS` ``
+- `` `React` ``
